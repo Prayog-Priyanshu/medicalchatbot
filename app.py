@@ -2,7 +2,7 @@ import streamlit as st
 from openai import OpenAI
 
 # Replace with your actual API key
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = "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"
 
 # Initialize OpenRouter client
 client = OpenAI(
@@ -43,7 +43,7 @@ if submit and user_input:
         with st.spinner("Thinking..."):
             try:
                 response = client.chat.completions.create(
-                    model="meta-llama/llama-4-maverick:free",
+                     model="nousresearch/deephermes-3-llama-3-8b-preview:free",
                     messages=[
                         {"role": "system", "content": "You are a helpful medical assistant. Only answer medical-related queries."},
                         {"role": "user", "content": user_input},

@@ -2,7 +2,7 @@ import streamlit as st
 from openai import OpenAI
 
 # Replace with your actual API key
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = "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"
 
 # Initialize OpenRouter client
 client = OpenAI(
